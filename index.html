@@ -79,6 +79,16 @@ This is some content
       document.getElementByld("date&time").innerHTML = d;
       
     </script>
+
+    <button id="colorButton">Click me to change color</button>
+    <script>
+      var button = document.getElementById("colorButton");
+      function changeColor(){
+        var randomColor="#" + Math.floor(Math.random()*16777215).toString(16);
+      }
+      
+    </script>
+    
     <p class="ex1">
       <pre>
 “Active Learning (Angluin, 1988, Cohn et al., 1994) is a paradigm where a concept is learnt by an 
