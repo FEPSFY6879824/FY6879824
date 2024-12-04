@@ -4,15 +4,15 @@
     <title>Conference Project</title>
     <br>
     <img src="WebBanner2023.png" alt="Banner" class="centre">
+    
+    
     <h2 style="text-align:center;">ENG0018 Computer Laboratory 2024</h2>
     <h2 style="text-align:center;">Student URN: 6879824</h2>
     <hr>
     <h1 style="font-family:calibri;text-align:center;"><b>The use of Animal-Computer-Interaction in aiding animals</b></h1>
     <hr>
-
-
-    <!style for tables>
-      <style>
+    <script>history.scrollRestoration = "manual"</script>
+    <style>
         .centre {
           display: block;
           margin-left: auto;
@@ -23,132 +23,355 @@
         table {
           font-family: arial, sans-serif;
           border-collapse: collapse;
-          width: 30%;
+          width: 100%;
           
         }
 
         td, th {
-          border: 1px solid #dddddd;
+          /*border: 1px solid #dddddd;*/
           text-align: left;
           padding: 8px;
         }
-
+        /*
         tr:nth-child(even) {
           background-color: #dddddd;
         }
-
+        */
 
 
         
-      </style>
-
-    <style>
-      ex1 {
-        margin-left: 250px;
-        font-family: arial;
-        font-size: 11px;
-      }
     </style>
+
   </head>
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <style>
     .mySlides {display:none;}
   </style>
-  <body style="background-color:#FFFFFF;margin-left:50px;">
-    <p><hr></p>
-    <table>
+
+  <body style="background-color:white;margin-left:50px;">
+
+    <style>
+        .paraText {
+          margin-left: 2px;
+          margin-right: 40px;
+          font-family: arial;
+          font-size: 15px;
+        }
+
+        .Title {
+          font-family: arial;
+          font-size: 25px;
+          font-weight: lighter;
+        }
+        .Figure1Text {
+          font-size: 12px;
+          margin-left: 320px;
+          margin-top: -300px;
+          margin-bottom: 300px;
+            
+        }
+        .Figure2Text {
+          font-size: 12px;
+          margin-left: 320px;
+          margin-top: -120px;
+          margin-bottom: 120px;
+            
+        }
+        .linkText {
+          font-size: 15px;
+          color:cadetblue;
+        }
+        .linkButton {
+          font-size: 15px;
+          color: cadetblue;
+          padding-left: 44%;
+        }
+    </style>
+
+    <table id="Table of Content">
       <tr>
-        <th><h3>Table of contents</h3></th>
+        <th><h3>Table of Contents</h3></th>
       </tr>
       <tr>
         <td><a href="#Abstract">Abstract</td>
       </tr>
       <tr>
-        <td><a href="#Introduction">Introduction</td>
+        <td><a href="#Introduction">1. Introduction</td>
       </tr>
       <tr>
-        <td><a href="#Analysis and discussion">Analysis and discussion</td>
+        <td><a href="#The Importance of Understanding Animal Needs">2. The Importance of Understanding Animal Needs</td>
+      </tr>
+      <tr>
+        <td><a href="#Ethics in Animal-Computer-Interaction">3. Ethics in Animal-Computer-Interaction</td>
+      </tr>
+      <tr>
+        <td><a href="#Existing Animal-Computer-Interaction Technologies">4. Existing Animal-Computer-Interaction Technologies</td>
+      </tr>
+      <tr>
+        <td><a href="#Conclusion">5. Conclusion</td>
       </tr>
       <tr>
         <td><a href="#References">References</td>
       </tr>
     </table>
-    <h3 id="Abstract">Abstract</h3>
-    <p class="ex1">
-      <pre>
-This is some content
-      </pre>
-    </p>
-    <h3 id="Introduction">Introduction</h3>
-    <hr>
-    
-    <!-- Button colour / time
-    <p id="date_time">hello</p>
-    <script>
-      //javascript to display the date and time on my webpage
-      const d = new Date();
-      document.getElementByld("date_time").innerHTML = d;
-    </script>
-    <button id="colorButton">Click me to change colour</button>
-    <script>
-      var button = document.getElementById("colorButton");
-      function changeColor(){
-        var randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
-        button.style.backgroundColor = randomColor;
-      }
-      button.addEventListener("click",changeColor);
-    </script>
-    -->
-    
-    <p class="ex1">
-      <pre>
-“Active Learning (Angluin, 1988, Cohn et al., 1994) is a paradigm where a concept is learnt by an 
-intelligent machine through the interaction of an oracle with the machine system, over a sequence of 
-learning epochs. A distinctive component in an active system is the querying strategy, used to sample 
-candidate training instances from a pool and evaluate them for informativeness, i.e., their potential 
-to improve the classification model. Various strategies have been proposed including; Query by 
-Committee (Seung et al., 1992), Monte Carlo estimation (Roy and McCallum, 2001), uncertainty 
-sampling (Lewis and Gale, 1994) and version space reduction (margin sampling) (Tong and Koller, 
-2001). Irrespective of how the most informative pattern instances are chosen at each epoch they are 
-presented for labeling, to a machine (database) or human oracle that has knowledge of the class 
-labels. After adding the newly labeled instances to the current training set, a revised model is 
-subsequently induced. A goal of this process is to achieve an efficient, incremental advancement of 
-learning at each epoch. The process is continued until some stopping criterion has been met, such as 
-reaching a stage where information from the selected instances is contrary to the model, causing the 
-classifier confidence to drop, as in Vlachos (2008).”
-      </pre>
-    </p>
-    <h3 id="Analysis and discussion">Analysis and discussion</h3>
-    
-    <hr>
-    <table>
-      <tr>
-        <th>£Cost of repairs</th>
-        <th>Lifespan of repairs (years)</th>
-      </tr>
-      <tr>
-        <td>0.7m</td>
-        <td>2</td>
-        
-      </tr>
-    </table>
-    <hr>
 
-    <!-- date and time display
-    <p id="date_time"></p>
-    <script>
-      const d = new Date();
-      document.getElementById("date_time").innerHTML=d;
-    </script>
-    -->
-    
-    <a href=”https://www.icevirtuallibrary.com/doi/full/10.1680/jbren.21.00034”>Toshihiko et al (2023).</a>
-    <h3 id="References">References</h3>
-    <p>
-      <pre>
-        references....
-      </pre>
+    <div id="Content">
+    <div id="Abstract">
+    <br>
+    <h3 class="Title">Abstract</h3>
+    <hr>
+    <p class="paraText">     
+      Animal-Computer-Interaction (ACI) is an expanding field that aims to benefit non-human animals with the use of technology. This article explores how ACI technologies are designed and adapted to suit animals effectively, guaranteeing positive experiences and welfare. The article focuses on models such as the Five Domains of Animal Welfare and the Coe Individual Competence Model, which helps compose the development of ACI technologies which keep the animals’ best interest in mind. Ethical considerations are also highlighted in regard to ACI, specifying on the difficulties of working with animals currently and the aims for future of ethics in the field. Finally, the article discusses current ACI technologies in use that can lead to greater animal care and research. The conclusion emphasises the need for a structured and regulated approach for ACI development, to support animals positively.
     </p>
+    </div>
+
+    <div id="Introduction">
+    <br>
+    <h3 class="Title">1. Introduction</h3>
+    <hr>
+    <p class="paraText">
+      The uses of Animal-Computer-Interactions are constantly expanding from research, zoos, farms and for domestic animals. Animals’ interactions with machines attributes for a deeper understanding of how animals think and act, thus allowing for animals’ quality of life to be improved significantly (<a href="#Mancini, C., & Nannoni, E. (2023)" class="linkText">Mancini, C., & Nannoni, E., 2023</a>). Understanding animal behaviour is essential as it allows us to successfully target important requirements for developing technologies. This leads to improved conservation efforts as advantageous technology can be used, suited to the environment. Maintenance of ecosystems health, disease management and human-animal interactions are all impacted by the use of ACI, highlighting the need for improvement in the field.
+    </p>
+    </div>
+
+    <div id="The Importance of Understanding Animal Needs">
+        <br>
+        <h3 class="Title">2. The Importance of Understanding Animal Needs</h3>
+        <hr>
+        <p class="paraText">     
+          To make ACI more effective in aiding animals we must first understand what is responsible for achieving a positive improvement to the animals. The Five Domains of Animal Welfare model is often used to discover the link between wellbeing and lived experiences amongst animals. The model uses five layers to determine animal welfare, Nutrition(1), Environment(2), Physical Health(3), Behavioural interactions(4)  which lead to the final layer Mental state(5). These factors are checked at the individual level for every animal to ensure a positive effect on their wellbeing. The model’s use has been adopted by many organizations such as the Zoo and Aquarium Association and the RSPCA. (<a href="#Webber, S., Cobb, M. L., & Coe, J. (2022)" class="linkText">Webber, S., Cobb, M. L., & Coe, J., 2022</a>).
+        </p>
+        <p class="paraText">
+          To increase the effectiveness of ACI technologies on animals’ lives, other models are used, such as the Coe Individual Competence Model. This model, developed for animal facility designers, help to create environments which encourage animals to develop competence, thus supporting welfare as less reliance on zoos occurs and they can become self-dependent. The 5 steps of this model, Choice(1), Control(2), Variety(3) and Complexity(4) leading to development of Competence(5) (<a href="#Webber, S., Cobb, M. L., & Coe, J. (2022)" class="linkText">Webber, S., Cobb, M. L., & Coe, J., 2022</a>). Increasing competence leads to independence, helping rehabilitated animals integrate back into the wild with the correct skills to survive.          
+        </p>
+        <img src="Figure1.jpg" alt="Figure 1" height="400px">
+        <p class="Figure1Text"><b>Figure 1.</b> Welfare Through Competence model</p>
+        <p class="paraText">
+          In Figure 1, the Welfare through Competence (WtC) design is shown, this combines the two previously stated models, it is essential for creating and iterating on technologies made in ACI (<a href="#Webber, S., Cobb, M. L., & Coe, J. (2022)" class="linkText">Webber, S., Cobb, M. L., & Coe, J., 2022</a>). To achieve the most beneficial results for the animal targeted each section must be followed and questioned. In the example of tiger conservation and reintroduction into the wild, context of the situation is important, as animals in the wild should receive little human contact or help to ensure competence and independence. Therefore, when designing technology such as AI trail cameras that detect animals and their movements, relaying the information to park managers, camouflage is an aspect designers should focus on, including no sound or noise pollution is released by the devices distracting the tigers' daily activities (<a href="#GTFAdmin (2022)" class="linkText">GTFAdmin, 2022</a>). 
+        </p>
+    </div>
+    
+    <div id="Ethics in Animal-Computer-Interaction">
+      <br>
+      <h3 class="Title">3. Ethics in Animal-Computer-Interaction</h3>
+      <hr>
+      <p class="paraText">     
+        Animal-Computer-Interaction is a relatively new field of research starting early 2000s, meaning the principles and ethics of the subject are still in a volatile state. In research and development animals are often viewed as research instruments rather than living beings, as they cannot consent or state their best interest, this can lead to harm of these animals. Without taking the best interest of the animal into account it can lead to issues such as night-time lighting in chicken barns to stimulate productivity, which disturbs chickens’ natural body cycles (<a href="#Coghlan, S., & Parker, C. (2023)" class="linkText">Coghlan, S., & Parker, C., 2023</a>).
+      </p>
+      <p class="paraText">
+Recently a push for better practice has occurred. Bodies such as the Institutional Animal Care and Use Committee (IACUC) in the USA and Animal Welfare and Ethical Review Bodies (AWERBs) in the UK are responsible for ensuring ethical, scientifically sound and standardised practice in animal research (<a href="#Mohan, S., & Huneke, R. (2019)" class="linkText">Mohan, S., & Huneke, R., 2019</a>). New ACI research and development attempts to minimise any negative impact on the animal, mainly by increasing scrutiny on rules. Although these attempts to increase animals ‘enjoyment’ of research is a step in the correct direction, the interests of the study can be prioritised making regulations less important. In contrast human research, the interests of the individual are prioritised over the studies interests.
+      </p>
+      <p class="paraText">
+To date there is no legal ethics protocol that exists to regulate animal usage in research for developing animal technologies (<a href="#Mancini, C. (2017)" class="linkText">Mancini, C., 2017</a>). In <a href="#Clara Mancini. (2011)" class="linkText"> Animal-computer interaction: a manifesto Clara Mancini. (2011)</a> a set of new protocols are established which aim to 1) Improve animals life quality or expectancy, 2) Support animals in their activities, 3) Foster interspecies relationships, such as enabling communication between humans and dogs. If pushed these protocols would ensure animals a positive experience when receiving computer interaction (<a href="#Resner, B.I. (2001)" class="linkText">Resner, B.I., 2001</a>).
+
+      </p>
+    </div>
+
+    <div id="Existing Animal-Computer-Interaction Technologies">
+      <br>
+      <h3 class="Title">4. Existing Animal-Computer-Interaction Technologies</h3>
+      <hr>
+      <p class="paraText">
+         Recently household pets have become targeted by ACI. For example, the use of Human Computer Dog Interfaces. These systems can provide visual and auditory representations of the user and dog, when in different locations. This allows for feeding and interaction with the dog remotely. More complex systems provide puzzles for the animal to complete in order to receive the food, providing positive reinforcement which is useful in training dogs.
+      </p>
+       <p class="paraText">
+          Wearable systems have increased in use as technology decreases in size over the years, this allows for devices to be attached to animals without disrupting their comfort or daily activities. Collar tags have been developed which allows for animals to gain access through pet flaps which are otherwise locked, collars for guide dogs allow for audio commands to be sounded through speakers (<a href="#Ritvo, S. E., & Allison, R. S. (2017)" class="linkText">Ritvo, S. E., & Allison, R. S., 2017</a>).
+       </p>
+       <p class="paraText">
+          ACI has become increasingly common in studying animals. Touchscreens have been used to study cognition in apes, including visual preferences, music discrimination and perceptual categorization such as that of Figure 2 (<a href="#Tetsuro Matsuzawa (2021)" class="linkText">Tetsuro Matsuzawa, 2021</a>).
+       </p>
+       <img src="Figure2.jpg" alt="Figure 2" height="200px">
+        <p class="Figure2Text"><b>Figure 2.</b> Chimpanzee memory research</p>
+    </div>
+
+    <div id="Conclusion">
+      <br>
+      <h3 class="Title">5. Conclusion</h3>
+      <hr>
+      <p class="paraText">     
+        Understanding animals’ needs and behaviours is essential for enhancing ACI technologies to promote conservation efforts, animal independence and rehabilitation. As ACI advances, its applications will expand, meaning a structured and regulated approach is crucial to ensure the creation of these new technologies to ensure a healthy and positive environment for the animals.
+      </p>
+    </div>
+
+    <div id="References">
+      <br>
+      <h3 class="Title">References</h3>
+      <hr>
+      <div id="Mancini, C., & Nannoni, E. (2023)">
+        <p class="Reference">
+          Mancini, C., & Nannoni, E. (2023). Editorial: Animal-computer interaction and beyond: The benefits of animal-centered research and design. Frontiers in Veterinary Science, 9, 1109994–1109994. <a href="https://doi.org/10.3389/fvets.2022.1109994" class="linkText">https://doi.org/10.3389/fvets.2022.1109994</a>
+        </p>
+        <p>
+          <a href="https://doi.org/10.3389/fvets.2022.1109994" class="linkButton">Article</a>
+        </p>
+      </div>
+      <div id="Mancini, C. (2017)">
+        <p class="Reference">
+          Mancini, C. (2017). Towards an animal-centred ethics for Animal–Computer Interaction. International Journal of Human-Computer Studies, 98, 221–233. 
+          <a href="https://doi.org/10.1016/j.ijhcs.2016.04.008" class="linkText">https://doi.org/10.1016/j.ijhcs.2016.04.008</a>
+        </p>
+        <p>
+          <a href="https://doi.org/10.1016/j.ijhcs.2016.04.008" class="linkButton">Article</a>
+        </p>
+      </div>
+      <div id="Webber, S., Cobb, M. L., & Coe, J. (2022)">
+        <p class="Reference">
+          Webber, S., Cobb, M. L., & Coe, J. (2022). Welfare Through Competence: A Framework for Animal-Centric Technology Design. Frontiers in Veterinary Science, 9, 885973–885973. 
+          <a href="https://doi.org/10.3389/fvets.2022.885973" class="linkText">https://doi.org/10.3389/fvets.2022.885973</a>
+        </p>
+        <p>
+          <a href="https://doi.org/10.3389/fvets.2022.885973" class="linkButton">Article</a>
+        </p>
+      </div>
+      <div id="Ritvo, S. E., & Allison, R. S. (2017)">
+        <p class="Reference">
+          Ritvo, S. E., & Allison, R. S. (2017). Designing for the exceptional user: Nonhuman animal-computer interaction (ACI). Computers in Human Behavior, 70, 222–233. 
+          <a href="https://doi.org/10.1016/j.chb.2016.12.062" class="linkText">https://doi.org/10.1016/j.chb.2016.12.062</a>
+        </p>
+        <p>
+          <a href="https://doi.org/10.1016/j.chb.2016.12.062" class="linkButton">Article</a>
+        </p>
+      </div>
+      <div id="Mohan, S., & Huneke, R. (2019)">
+        <p class="Reference">
+          Mohan, S., & Huneke, R. (2019). The Role of IACUCs in Responsible Animal Research. ILAR Journal, 60(1), 43–49. 
+          <a href="https://doi.org/10.1093/ilar/ilz016" class="linkText">https://doi.org/10.1093/ilar/ilz016</a>
+        </p>
+        <p>
+          <a href="https://doi.org/10.1093/ilar/ilz016" class="linkButton">Article</a>
+        </p>
+      </div>
+      <div id="Clara Mancini. (2011)">
+        <p class="Reference">
+          Clara Mancini. (2011). Animal-computer interaction: a manifesto. interactions 18, 4 (July + August 2011), 69–73. 
+          <a href="https://doi.org/10.1145/1978822.1978836" class="linkText">https://doi.org/10.1145/1978822.1978836</a>
+        </p>
+        <p>
+          <a href="https://doi.org/10.1145/1978822.1978836" class="linkButton">Article</a>
+        </p>
+      </div>
+      <div id="Resner, B.I. (2001)">
+        <p class="Reference">
+          Resner, B.I. (2001). Rover@Home : computer mediated remote interaction between humans and dogs. [online] dspace.mit.edu. Available at: 
+          <a href="https://dspace.mit.edu/handle/1721.1/62357" class="linkText">https://dspace.mit.edu/handle/1721.1/62357</a>
+        </p>
+        <p>
+          <a href="https://dspace.mit.edu/handle/1721.1/62357" class="linkButton">Article</a>
+        </p>
+      </div>
+      <div id="GTFAdmin (2022)">
+        <p class="Reference">
+          GTFAdmin (2022). Tiger, Tiger, in the Night…Now Visible in Real Time – Global Tiger Forum. [online] Globaltigerforum.org. Available at: 
+          <a href="https://globaltigerforum.org/tiger-tiger-in-the-nightnow-visible-in-real-time/ " class="linkText">https://globaltigerforum.org/tiger-tiger-in-the-nightnow-visible-in-real-time/ </a>
+        </p>
+        <p>
+          <a href="https://globaltigerforum.org/tiger-tiger-in-the-nightnow-visible-in-real-time/ " class="linkButton">Article</a>
+        </p>
+      </div>
+      <div id="Coghlan, S., & Parker, C. (2023)">
+        <p class="Reference">
+          Coghlan, S., & Parker, C. (2023). Harm to Nonhuman Animals from AI: a Systematic Account and Framework. Philosophy & Technology, 36(2), 25-. 
+          <a href="https://doi.org/10.1007/s13347-023-00627-6" class="linkText">https://doi.org/10.1007/s13347-023-00627-6</a>
+        </p>
+        <p>
+          <a href="https://doi.org/10.1007/s13347-023-00627-6" class="linkButton">Article</a>
+        </p>
+      </div>
+      <div id="Tetsuro Matsuzawa (2021)">
+        <p class="Reference">
+          Tetsuro Matsuzawa (2021). Primate Memory Inference. 
+          <a href="https://doi.org/10.37282/991819.21.51" class="linkText">https://doi.org/10.37282/991819.21.51</a>
+        </p>
+        <p>
+          <a href="https://doi.org/10.37282/991819.21.51" class="linkButton">Article</a>
+        </p>
+      </div>
+    </div>
+    </div>
+
+
+  <!-- //////////////////////////////////////////////////////////////////////////////// -->
+  <!-- ////////////////////////////// Adding last update ////////////////////////////// -->
+  <!-- //////////////////////////////////////////////////////////////////////////////// -->
+    <!-- Last commit time display -->
+<div id="last-updated">Loading last update time...</div>
+<!-- Verify Button -->
+<button onclick="verifyLastUpdatedTime()" style="display: block; margin: 10px auto; padding: 8px 16px;">
+    Verify Last Modified Time
+</button>
+<script>
+    async function getLastUpdatedTime() {
+        const username = 'nr0025';
+        const repo = 'FY0025';
+       
+        const url = `https://api.github.com/repos/${username}/${repo}/commits`;
+        try {
+            const response = await fetch(url, {
+                method: 'GET',
+                headers: {
+                    'Accept': 'application/vnd.github.v3+json',
+                }
+            });
+            if (!response.ok) {
+                throw new Error(`Error fetching data: ${response.status} - ${response.statusText}`);
+            }
+            const commits = await response.json();
+            if (commits && commits.length > 0) {
+                const lastCommitDate = new Date(commits[0].commit.committer.date);
+               
+                // Displaying the time on load
+                document.getElementById('last-updated').innerText = `Last Modified Time: ${lastCommitDate.toLocaleString()}`;
+            } else {
+                document.getElementById('last-updated').innerText = 'No commits found in the repository.';
+            }
+        } catch (error) {
+            console.error('Error fetching the last updated time:', error);
+            document.getElementById('last-updated').innerText = 'Error fetching update time. Please check the repository details.';
+        }
+    }
+    // Function to verify the last update time by re-fetching it from the API
+    async function verifyLastUpdatedTime() {
+        document.getElementById('last-updated').innerText = 'Verifying...';
+        await getLastUpdatedTime();
+        alert("Last modified time has been successfully verified from GitHub API.");
+    }
+    // Initial load to display the time on page load
+    window.onload = getLastUpdatedTime;
+</script>
+
+
+ <!-- //////////////////////////////////////////////////////////////////////////////// -->
+  <!-- ////////////////////////////// Word count function ////////////////////////////// -->
+  <!-- //////////////////////////////////////////////////////////////////////////////// -->
+<!-- Placeholder for total word count -->
+<p id="totalWordCount"></p>
+<hr>
+<script>
+  // Function to calculate and display word count for a specified section
+  function displayWordCount(sectionId, outputId) {
+    // Get the text content from the specified section
+    const text = document.getElementById(sectionId).textContent;
+    // Split text into words based on spaces and filter out any empty strings
+    const wordArray = text.trim().split(/\s+/);
+    // Count the words
+    const wordCount = wordArray.length;
+    // Return the word count for summing purposes
+    return wordCount;
+  }
+  // Function to calculate and display total word count from selected sections
+  function displayTotalWordCount() {
+    // Calculate word count for each section and accumulate the total
+    const IntroductionCount = displayWordCount("Introduction_InText");
+    const AnalysisCount = displayWordCount("Analysis_InText");
+    // Calculate the sum of all selected sections
+    const totalWordCount = IntroductionCount + AnalysisCount;
+    // Display the total word count
+    document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
+  }
+  // Run the function for specific sections and display total count when the page loads
+  window.onload = displayTotalWordCount;
+</script>
   </body>
 </html>
