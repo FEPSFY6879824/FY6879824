@@ -95,22 +95,24 @@
           text-align: center;
         }
         #myBtn {
-          /*display: none; /* Hidden by default */
-          position: fixed; /* Fixed/sticky position */
-          bottom: 20px; /* Place the button at the bottom of the page */
-          right: 30px; /* Place the button 30px from the right */
-          z-index: 99; /* Make sure it does not overlap */
-          border: none; /* Remove borders */
-          outline: none; /* Remove outline */
-          background-color:darkgrey; /* Set a background color */
-          color: white; /* Text color */
-          cursor: pointer; /* Add a mouse pointer on hover */
-          padding: 15px; /* Some padding */
-          border-radius: 10px; /* Rounded corners */
-          font-size: 18px; /* Increase font size */
+          position: fixed; 
+          bottom: 20px; 
+          right: 30px; 
+          z-index: 99; 
+          border: none; 
+          outline: none; 
+          background-color:darkgrey; 
+          color: white; 
+          cursor: pointer; 
+          padding: 15px; 
+          border-radius: 10px; 
+          font-size: 18px; 
         }
         #myBtn:hover {
-          background-color: #555; /* Add a dark-grey background on hover */
+          background-color: #555; 
+        }
+        .contentLink:hover {
+          color:cadetblue;
         }
     </style>
 
@@ -119,31 +121,31 @@
         <th><h3>Table of Contents</h3></th>
       </tr>
       <tr>
-        <td><a href="#Abstract">Abstract</td>
+        <td class="contentLink"><a href="#Abstract">Abstract</td>
       </tr>
       <tr>
-        <td><a href="#Introduction">1. Introduction</td>
+        <td class="contentLink"><a href="#Introduction">1. Introduction</td>
       </tr>
       <tr>
-        <td><a href="#The Importance of Understanding Animal Needs">2. The Importance of Understanding Animal Needs</td>
+        <td class="contentLink"><a href="#The Importance of Understanding Animal Needs">2. The Importance of Understanding Animal Needs</td>
       </tr>
       <tr>
-        <td><a href="#Ethics in Animal-Computer-Interaction">3. Ethics in Animal-Computer-Interaction</td>
+        <td class="contentLink"><a href="#Ethics in Animal-Computer-Interaction">3. Ethics in Animal-Computer-Interaction</td>
       </tr>
       <tr>
-        <td><a href="#Existing Animal-Computer-Interaction Technologies">4. Existing Animal-Computer-Interaction Technologies</td>
+        <td class="contentLink"><a href="#Existing Animal-Computer-Interaction Technologies">4. Existing Animal-Computer-Interaction Technologies</td>
       </tr>
       <tr>
-        <td><a href="#Conclusion">5. Conclusion</td>
+        <td class="contentLink"><a href="#Conclusion">5. Conclusion</td>
       </tr>
       <tr>
-        <td><a href="#References">References</td>
+        <td class="contentLink"><a href="#References">References</td>
       </tr>
       <tr>
-        <td><a href="#Presentation">Presentation</td>
+        <td class="contentLink"><a href="#Presentation">Presentation</td>
       </tr>
       <tr>
-        <td><a href="#last-updated">Word Count and Last Update</td>
+        <td class="contentLink"><a href="#last-updated">Word Count and Last Update</td>
       </tr>
     </table>
     <br>
@@ -321,7 +323,7 @@ To date there is no legal ethics protocol that exists to regulate animal usage i
     </div>
     </div>
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
+    <button onclick="topFunction()" id="myBtn" title="Go to top">^</button> 
     <script>
     
 let mybutton = document.getElementById("myBtn");
